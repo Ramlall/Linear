@@ -21,9 +21,30 @@ namespace Linear
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+            {
+            // If the combobox is selected to be 2x2, disable the extra textbox's.
+            if (comboBox1.Text == "2x2")
+                {
+                textBox3.Enabled = false;
+                textBox5.Enabled = false;
+                textBox7.Enabled = false;
+                textBox8.Enabled = false;
+                textBox9.Enabled = false;
+                textBox12.Enabled = false;
+                textBox15.Enabled = false;
+                }
+            // If the combobox is selected to be 2x2, enable the extra textbox's.
+            if (comboBox1.Text == "3x3")
+                {
+                textBox3.Enabled = true;
+                textBox5.Enabled = true;
+                textBox7.Enabled = true;
+                textBox8.Enabled = true;
+                textBox9.Enabled = true;
+                textBox12.Enabled = true;
+                textBox15.Enabled = true;
+                }
+            }
 
         private void label8_Click(object sender, EventArgs e)
         {
@@ -31,6 +52,11 @@ namespace Linear
         }
 
         private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
